@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Aggregation:" />
+    <group
+        android:id="@+id/menu_group_aggregation"
+        android:checkableBehavior="single">
+        <item
+            android:title="Disabled"
+            android:id="@+id/aggregation_disabled"
+            android:checked="true"/>
+        <item
+            android:title="Date"
+            android:id="@+id/aggregation_date" />
+        <item
+            android:title="Category"
+            android:id="@+id/aggregation_category" />
+        <item
+            android:title="Seller"
+            android:id="@+id/aggregation_seller" />
+    </group>
+
+    <item android:title="Granularity:" />
+    <group
+        android:id="@+id/menu_group_granularity"
+        android:checkableBehavior="single">
+        <item
+            android:title="Disabled"
+            android:id="@+id/granularity_disabled" />
+        <item
+            android:title="Day"
+            android:id="@+id/granularity_day" />
+        <item
+            android:title="Week"
+            android:id="@+id/granularity_week" />
+        <item
+            android:title="Month"
+            android:id="@+id/granularity_month" />
+    </group>
+</menu>

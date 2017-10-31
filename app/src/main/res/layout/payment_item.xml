@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60sp"
+    android:padding="4sp"
+    >
+
+    <ImageView
+        android:id="@+id/payment_img"
+        android:layout_width="48sp"
+        android:layout_height="48sp"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/payment_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="6sp"
+        android:paddingRight="6sp"
+        android:text="7.50 BYN" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/payment_datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center"
+            android:text="01.01.2017 21:00:00" />
+
+        <TextView
+            android:id="@+id/payment_organization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center"
+            android:text="SOME SHOP" />
+    </LinearLayout>
+
+</LinearLayout>
